@@ -27,13 +27,13 @@ Usage::
 
 The script will automatically label each curve based on the numeric
 suffix in the filename (e.g. ``highs_10.txt`` → ``ROUNDS=10``) and
-save the resulting figure to ``convergence.png`` in the current
+save the resulting figure to ``convergence.pdf`` in the current
 directory.
 
 Example::
 
     $ python plot_convergence.py /home/oai/share/highs_*.txt
-    Saved plot to convergence.png
+    Saved plot to convergence.pdf
 
 Requirements: ``matplotlib`` must be installed.  If it is not
 available, install it via pip (`pip install matplotlib`).
@@ -152,7 +152,7 @@ def make_step_curve(times: List[float], gaps: List[float]) -> Tuple[List[float],
     return step_times, step_gaps
 
 
-def plot_convergence(files: List[str], output: str = "convergence.png") -> None:
+def plot_convergence(files: List[str], output: str = "convergence.pdf") -> None:
     """Plot convergence curves for a list of HiGHS solver logs.
 
     Each input file is parsed for time/gap pairs and plotted as a
@@ -165,7 +165,7 @@ def plot_convergence(files: List[str], output: str = "convergence.png") -> None:
     files: List[str]
         List of paths to HiGHS solver log files.
     output: str, optional
-        Filename for the saved plot.  Defaults to 'convergence.png'.
+        Filename for the saved plot.  Defaults to 'convergence.pdf'.
     """
 
     if not files:
@@ -222,8 +222,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--output",
-        default="convergence.png",
-        help="Filename for the saved plot (default: convergence.png)",
+        default="convergence.pdf",
+        help="Filename for the saved plot (default: convergence.pdf)",
     )
     args = parser.parse_args()
     plot_convergence(args.files, args.output)
