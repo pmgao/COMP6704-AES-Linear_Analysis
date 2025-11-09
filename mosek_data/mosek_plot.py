@@ -10,7 +10,7 @@ for the CBC and HiGHS plots.
 
 Usage::
 
-    python mosek_convergence_simple.py --files mosek_*.txt --output mosek_time_simple.png
+    python mosek_convergence_simple.py --files mosek_*.txt --output mosek_time_simple.pdf
 
 If no files are supplied via the command line, a predefined list of
 ``mosek_2.txt``, ``mosek_4.txt``, ``mosek_6.txt`` etc. is used.
@@ -167,7 +167,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--output",
-        default="mosek_time_simple.png",
+        default="mosek_time_simple.pdf",
         help="Filename for the output plot",
     )
     args = parser.parse_args()
