@@ -1,0 +1,85 @@
+(CVXPY) Nov 08 12:27:59 PM: Your problem has 56 variables, 73 constraints, and 0 parameters.
+(CVXPY) Nov 08 12:27:59 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Nov 08 12:27:59 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Nov 08 12:27:59 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Nov 08 12:27:59 PM: Your problem is compiled with the CPP canonicalization backend.
+(CVXPY) Nov 08 12:27:59 PM: Compiling problem (target solver=HIGHS).
+(CVXPY) Nov 08 12:27:59 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> HIGHS
+(CVXPY) Nov 08 12:27:59 PM: Applying reduction Dcp2Cone
+(CVXPY) Nov 08 12:27:59 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Nov 08 12:27:59 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Nov 08 12:27:59 PM: Applying reduction HIGHS
+(CVXPY) Nov 08 12:27:59 PM: Finished problem compilation (took 1.102e-02 seconds).
+(CVXPY) Nov 08 12:27:59 PM: Invoking solver HIGHS  to obtain a solution.
+Running HiGHS 1.12.0 (git hash: 755a8e0): Copyright (c) 2025 HiGHS under MIT licence terms
+MIP has 73 rows; 56 cols; 232 nonzeros; 56 integer variables (56 binary)
+Coefficient ranges:
+  Matrix  [1e+00, 5e+00]
+  Cost    [1e+00, 1e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 1e+00]
+Presolving model
+73 rows, 56 cols, 232 nonzeros  0s
+73 rows, 56 cols, 232 nonzeros  0s
+Presolve reductions: rows 73(-0); columns 56(-0); nonzeros 232(-0) - Not reduced
+Objective function is integral with scale 1
+
+Solving MIP model with:
+   73 rows
+   56 cols (56 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+   232 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+ u       0       0         0   0.00%   -inf            32                 Large        0      0      0         0     0.0s
+ J       0       0         0   0.00%   -inf            31                 Large        0      0      0         0     0.0s
+         0       0         0   0.00%   1               31                96.77%        0      0     14        45     0.0s
+ C       0       0         0   0.00%   3.5             5                 30.00%      130      5     28       151     0.0s
+         1       0         1 100.00%   5               5                  0.00%      156      7     28       160     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      5
+  Dual bound        5
+  Gap               0% (tolerance: 0.01%)
+  P-D integral      0.00552524476557
+  Solution status   feasible
+                    5 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.01
+  Max sub-MIP depth 0
+  Nodes             1
+  Repair LPs        0
+  LP iterations     160
+                    0 (strong br.)
+                    109 (separation)
+                    6 (heuristics)
+(CVXPY) Nov 08 12:27:59 PM: Problem status: optimal
+(CVXPY) Nov 08 12:27:59 PM: Optimal value: 5.000e+00
+(CVXPY) Nov 08 12:27:59 PM: Compilation took 1.102e-02 seconds
+(CVXPY) Nov 08 12:27:59 PM: Solver (including time spent in interface) took 9.894e-03 seconds
+===============================================================================
+                                     CVXPY                                     
+                                     v1.7.3                                    
+===============================================================================
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+ROUNDS=2, objective (min active S-boxes over first N rounds) = 5.0
+x (first 32): [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+d (first 8):  [1, 0, 0, 0, 0, 1, 1, 1]
+N=2, min(k_N) = 5

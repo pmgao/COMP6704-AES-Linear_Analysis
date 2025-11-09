@@ -1,0 +1,77 @@
+(CVXPY) Nov 08 11:58:22 AM: Your problem has 96 variables, 145 constraints, and 0 parameters.
+(CVXPY) Nov 08 11:58:22 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Nov 08 11:58:22 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Nov 08 11:58:22 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Nov 08 11:58:22 AM: Your problem is compiled with the CPP canonicalization backend.
+(CVXPY) Nov 08 11:58:22 AM: Compiling problem (target solver=CBC).
+(CVXPY) Nov 08 11:58:22 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> CBC
+(CVXPY) Nov 08 11:58:22 AM: Applying reduction Dcp2Cone
+(CVXPY) Nov 08 11:58:22 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Nov 08 11:58:22 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Nov 08 11:58:22 AM: Applying reduction CBC
+(CVXPY) Nov 08 11:58:22 AM: Finished problem compilation (took 1.889e-02 seconds).
+(CVXPY) Nov 08 11:58:22 AM: Invoking solver CBC  to obtain a solution.
+(CVXPY) Nov 08 11:58:23 AM: Problem status: optimal
+(CVXPY) Nov 08 11:58:23 AM: Optimal value: 2.500e+01
+(CVXPY) Nov 08 11:58:23 AM: Compilation took 1.889e-02 seconds
+(CVXPY) Nov 08 11:58:23 AM: Solver (including time spent in interface) took 1.388e-01 seconds
+===============================================================================
+                                     CVXPY                                     
+                                     v1.7.3                                    
+===============================================================================
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+ROUNDS=4, objective (min active S-boxes over first N rounds) = 25.0
+x (first 32): [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+d (first 8):  [1, 0, 0, 1, 1, 1, 1, 1]
+N=4, min(k_N) = 25
+Welcome to the CBC MILP Solver 
+Version: 2.10.12 
+Build Date: Jul  1 2025 
+
+command line - ICbcModel -solve -quit (default strategy 1)
+Continuous objective value is 1 - 0.00 seconds
+Cgl0004I processed model has 145 rows, 96 columns (96 integer (96 of which binary)) and 464 elements
+Cbc0012I Integer solution of 25 found by DiveCoefficient after 0 iterations and 0 nodes (0.00 seconds)
+Cbc0038I Full problem 145 rows 96 columns, reduced to 94 rows 62 columns
+Cbc0031I 7 added rows had average density of 7.7142857
+Cbc0013I At root node, 7 cuts changed objective from 1 to 20 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.006 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 980 row cuts average 35.7 elements, 0 column cuts (0 active)  in 0.016 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 35 row cuts average 8.0 elements, 0 column cuts (0 active)  in 0.010 seconds - new frequency is 1
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.001 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 73 row cuts average 17.2 elements, 0 column cuts (0 active)  in 0.007 seconds - new frequency is 1
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.001 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 81 row cuts average 25.8 elements, 0 column cuts (0 active)  in 0.006 seconds - new frequency is 1
+Cbc0014I Cut generator 7 (ZeroHalf) - 48 row cuts average 14.2 elements, 0 column cuts (0 active)  in 0.032 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 25 best solution, best possible 20 (0.13 seconds)
+Cbc0001I Search completed - best objective 25, took 4814 iterations and 2 nodes (0.13 seconds)
+Cbc0032I Strong branching done 38 times (464 iterations), fathomed 0 nodes and fixed 8 variables
+Cbc0035I Maximum depth 0, 1 variables fixed on reduced cost
+Cuts at root node changed objective from 1 to 20
+Probing was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.006 seconds)
+Gomory was tried 103 times and created 989 cuts of which 0 were active after adding rounds of cuts (0.016 seconds)
+Knapsack was tried 103 times and created 35 cuts of which 0 were active after adding rounds of cuts (0.011 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.001 seconds)
+MixedIntegerRounding2 was tried 103 times and created 74 cuts of which 0 were active after adding rounds of cuts (0.008 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.001 seconds)
+TwoMirCuts was tried 103 times and created 103 cuts of which 0 were active after adding rounds of cuts (0.006 seconds)
+ZeroHalf was tried 100 times and created 48 cuts of which 0 were active after adding rounds of cuts (0.032 seconds)
+
+Result - Optimal solution found
+
+Objective value:                25.00000000
+Enumerated nodes:               2
+Total iterations:               4814
+Time (CPU seconds):             0.13
+Time (Wallclock seconds):       0.14
+
+Total time (CPU seconds):       0.13   (Wallclock seconds):       0.14
+

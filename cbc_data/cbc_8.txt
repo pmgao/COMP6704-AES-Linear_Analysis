@@ -1,0 +1,90 @@
+(CVXPY) Nov 08 11:59:28 AM: Your problem has 176 variables, 289 constraints, and 0 parameters.
+(CVXPY) Nov 08 11:59:28 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Nov 08 11:59:28 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Nov 08 11:59:28 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Nov 08 11:59:28 AM: Your problem is compiled with the CPP canonicalization backend.
+(CVXPY) Nov 08 11:59:28 AM: Compiling problem (target solver=CBC).
+(CVXPY) Nov 08 11:59:28 AM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> CBC
+(CVXPY) Nov 08 11:59:28 AM: Applying reduction Dcp2Cone
+(CVXPY) Nov 08 11:59:28 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Nov 08 11:59:28 AM: Applying reduction ConeMatrixStuffing
+(CVXPY) Nov 08 11:59:28 AM: Applying reduction CBC
+(CVXPY) Nov 08 11:59:28 AM: Finished problem compilation (took 3.516e-02 seconds).
+(CVXPY) Nov 08 11:59:28 AM: Invoking solver CBC  to obtain a solution.
+Welcome to the CBC MILP Solver 
+Version: 2.10.12 
+Build Date: Jul  1 2025 
+
+command line - ICbcModel -solve -quit (default strategy 1)
+Continuous objective value is 1 - 0.00 seconds
+Cgl0004I processed model has 289 rows, 176 columns (176 integer (176 of which binary)) and 928 elements
+Cbc0012I Integer solution of 70 found by DiveCoefficient after 0 iterations and 0 nodes (0.01 seconds)
+Cbc0031I 5 added rows had average density of 157
+Cbc0013I At root node, 5 cuts changed objective from 1 to 3.8751666 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.011 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 797 row cuts average 156.7 elements, 0 column cuts (0 active)  in 0.087 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.018 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.003 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 82 row cuts average 143.4 elements, 0 column cuts (0 active)  in 0.063 seconds - new frequency is 1
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.001 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 70 row cuts average 153.6 elements, 0 column cuts (0 active)  in 0.026 seconds - new frequency is 1
+Cbc0010I After 0 nodes, 1 on tree, 70 best solution, best possible 3.8751666 (0.58 seconds)
+Cbc0012I Integer solution of 68 found by DiveCoefficient after 19277 iterations and 1 nodes (0.65 seconds)
+Cbc0012I Integer solution of 67 found by DiveCoefficient after 19293 iterations and 2 nodes (0.66 seconds)
+Cbc0012I Integer solution of 63 found by DiveCoefficient after 19815 iterations and 6 nodes (0.78 seconds)
+Cbc0012I Integer solution of 60 found by DiveCoefficient after 20556 iterations and 14 nodes (0.82 seconds)
+Cbc0012I Integer solution of 54 found by DiveCoefficient after 20741 iterations and 17 nodes (0.84 seconds)
+Cbc0004I Integer solution of 50 found after 22277 iterations and 32 nodes (0.91 seconds)
+Cbc0038I Full problem 289 rows 176 columns, reduced to 195 rows 120 columns - 27 fixed gives 103, 87 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 170 rows 120 columns - 20 fixed gives 99, 80 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 150 rows 104 columns - 23 fixed gives 80, 68 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 178 rows 125 columns - 22 fixed gives 97, 90 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 149 rows 105 columns - 20 fixed gives 83, 74 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 207 rows 126 columns - 25 fixed gives 121, 99 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 188 rows 130 columns - 17 fixed gives 129, 104 - ok now
+Cbc0038I Full problem 289 rows 176 columns, reduced to 175 rows 124 columns - 21 fixed gives 108, 83 - ok now
+Cbc0010I After 1000 nodes, 5 on tree, 50 best solution, best possible 35 (4.16 seconds)
+Cbc0001I Search completed - best objective 50, took 309783 iterations and 11944 nodes (4.25 seconds)
+Cbc0032I Strong branching done 9680 times (186454 iterations), fathomed 121 nodes and fixed 286 variables
+Cbc0041I Maximum depth 23, 65 variables fixed on reduced cost (complete fathoming 219 times, 10918 nodes taking 258542 iterations)
+Cuts at root node changed objective from 1 to 3.87517
+Probing was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.011 seconds)
+Gomory was tried 100 times and created 797 cuts of which 0 were active after adding rounds of cuts (0.087 seconds)
+Knapsack was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.018 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.003 seconds)
+MixedIntegerRounding2 was tried 749 times and created 93 cuts o(CVXPY) Nov 08 11:59:32 AM: Problem status: optimal
+(CVXPY) Nov 08 11:59:32 AM: Optimal value: 5.000e+01
+(CVXPY) Nov 08 11:59:32 AM: Compilation took 3.516e-02 seconds
+(CVXPY) Nov 08 11:59:32 AM: Solver (including time spent in interface) took 4.312e+00 seconds
+===============================================================================
+                                     CVXPY                                     
+                                     v1.7.3                                    
+===============================================================================
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+ROUNDS=8, objective (min active S-boxes over first N rounds) = 50.0
+x (first 32): [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+d (first 8):  [1, 0, 0, 1, 1, 1, 1, 0]
+N=8, min(k_N) = 50
+f which 0 were active after adding rounds of cuts (0.130 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.001 seconds)
+TwoMirCuts was tried 749 times and created 125 cuts of which 0 were active after adding rounds of cuts (0.082 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.004 seconds)
+
+Result - Optimal solution found
+
+Objective value:                50.00000000
+Enumerated nodes:               11944
+Total iterations:               309783
+Time (CPU seconds):             4.25
+Time (Wallclock seconds):       4.31
+
+Total time (CPU seconds):       4.25   (Wallclock seconds):       4.31
+

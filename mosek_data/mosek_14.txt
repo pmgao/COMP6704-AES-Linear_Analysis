@@ -1,0 +1,116 @@
+(CVXPY) Nov 08 12:32:52 PM: Your problem has 296 variables, 505 constraints, and 0 parameters.
+(CVXPY) Nov 08 12:32:52 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Nov 08 12:32:52 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Nov 08 12:32:52 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+(CVXPY) Nov 08 12:32:52 PM: Your problem is compiled with the CPP canonicalization backend.
+(CVXPY) Nov 08 12:32:52 PM: Compiling problem (target solver=MOSEK).
+(CVXPY) Nov 08 12:32:52 PM: Reduction chain: Dcp2Cone -> CvxAttr2Constr -> ConeMatrixStuffing -> MOSEK
+(CVXPY) Nov 08 12:32:52 PM: Applying reduction Dcp2Cone
+(CVXPY) Nov 08 12:32:52 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Nov 08 12:32:52 PM: Applying reduction ConeMatrixStuffing
+(CVXPY) Nov 08 12:32:53 PM: Applying reduction MOSEK
+(CVXPY) Nov 08 12:32:53 PM: Finished problem compilation (took 5.968e-02 seconds).
+(CVXPY) Nov 08 12:32:53 PM: Invoking solver MOSEK  to obtain a solution.
+/home/pmgao/comp6704/individual_project/venv/lib/python3.12/site-packages/mosek/__init__.py:11539: UserWarning: Argument subi in putaijlist64: Incorrect array format causing data to be copied
+  warnings.warn("Argument subi in putaijlist64: Incorrect array format causing data to be copied");
+/home/pmgao/comp6704/individual_project/venv/lib/python3.12/site-packages/mosek/__init__.py:11568: UserWarning: Argument subj in putaijlist64: Incorrect array format causing data to be copied
+  warnings.warn("Argument subj in putaijlist64: Incorrect array format causing data to be copied");
+(CVXPY) Nov 08 12:32:53 PM: Problem
+(CVXPY) Nov 08 12:32:53 PM:   Name                   :                 
+(CVXPY) Nov 08 12:32:53 PM:   Objective sense        : minimize        
+(CVXPY) Nov 08 12:32:53 PM:   Type                   : LO (linear optimization problem)
+(CVXPY) Nov 08 12:32:53 PM:   Constraints            : 505             
+(CVXPY) Nov 08 12:32:53 PM:   Affine conic cons.     : 0               
+(CVXPY) Nov 08 12:32:53 PM:   Disjunctive cons.      : 0               
+(CVXPY) Nov 08 12:32:53 PM:   Cones                  : 0               
+(CVXPY) Nov 08 12:32:53 PM:   Scalar variables       : 296             
+(CVXPY) Nov 08 12:32:53 PM:   Matrix variables       : 0               
+(CVXPY) Nov 08 12:32:53 PM:   Integer variables      : 296             
+(CVXPY) Nov 08 12:32:53 PM: 
+(CVXPY) Nov 08 12:32:53 PM: Optimizer started.
+(CVXPY) Nov 08 12:32:53 PM: Mixed integer optimizer started.
+(CVXPY) Nov 08 12:32:53 PM: Threads used: 24
+(CVXPY) Nov 08 12:32:53 PM: Presolve started.
+(CVXPY) Nov 08 12:32:53 PM: Presolve terminated. Time = 0.00, probing time =  0.00
+(CVXPY) Nov 08 12:32:53 PM: Presolved problem: 280 variables, 489 constraints, 1576 non-zeros
+(CVXPY) Nov 08 12:32:53 PM: Presolved problem: 0 general integer, 280 binary, 0 continuous
+(CVXPY) Nov 08 12:32:53 PM: Clique table size: 432
+(CVXPY) Nov 08 12:32:53 PM: Symmetry factor  : 1.00 (detection time = 0.00)
+(CVXPY) Nov 08 12:32:53 PM: BRANCHES RELAXS   ACT_NDS  DEPTH    BEST_INT_OBJ         BEST_RELAX_OBJ       REL_GAP(%)  TIME  
+(CVXPY) Nov 08 12:32:53 PM: 0        0        1        0        1.4000000000e+02     NA                   NA          0.0   
+(CVXPY) Nov 08 12:32:53 PM: 0        1        1        0        1.3600000000e+02     1.0000000000e+00     99.26       0.0   
+(CVXPY) Nov 08 12:32:53 PM: Root cut generation started.
+(CVXPY) Nov 08 12:32:53 PM: 0        1        1        0        1.3600000000e+02     1.0000000000e+00     99.26       0.1   
+(CVXPY) Nov 08 12:32:53 PM: 0        2        1        0        1.3600000000e+02     1.4769000508e+00     98.91       0.1   
+(CVXPY) Nov 08 12:32:53 PM: 0        3        1        0        1.3100000000e+02     2.4784058692e+00     98.11       0.1   
+(CVXPY) Nov 08 12:32:53 PM: 0        4        1        0        1.2000000000e+02     3.0296490207e+00     97.48       0.2   
+(CVXPY) Nov 08 12:32:53 PM: 0        5        1        0        1.2000000000e+02     4.0000000000e+00     96.67       0.2   
+(CVXPY) Nov 08 12:32:53 PM: Root cut generation terminated. Time = 0.16
+(CVXPY) Nov 08 12:32:53 PM: 0        7        1        0        1.1000000000e+02     4.0000000000e+00     96.36       0.2   
+(CVXPY) Nov 08 12:32:53 PM: 2        29       3        1        1.1000000000e+02     4.0000000000e+00     96.36       0.3   
+(CVXPY) Nov 08 12:32:53 PM: 4        46       3        2        1.1000000000e+02     2.6665039063e+01     75.76       0.3   
+(CVXPY) Nov 08 12:32:53 PM: 6        81       3        3        1.1000000000e+02     3.0664062500e+01     72.12       0.3   
+(CVXPY) Nov 08 12:32:53 PM: 7        94       4        4        1.0300000000e+02     3.0664062500e+01     70.23       0.3   
+(CVXPY) Nov 08 12:32:53 PM: 10       107      3        5        1.0300000000e+02     5.0656250000e+01     50.82       0.3   
+(CVXPY) Nov 08 12:32:53 PM: 11       132      4        6        1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 13       195      6        7        1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 15       225      8        8        1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 18       238      7        9        1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 21       264      8        10       1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 24       290      9        11       1.0300000000e+02     5.0656250000e+01     50.82       0.4   
+(CVXPY) Nov 08 12:32:53 PM: 27       361      12       12       9.2000000000e+01     5.0656250000e+01     44.94       0.5   
+(CVXPY) Nov 08 12:32:53 PM: 31       429      16       13       9.2000000000e+01     5.0656250000e+01     44.94       0.5   
+(CVXPY) Nov 08 12:32:53 PM: 37       468      16       14       9.2000000000e+01     5.0656250000e+01     44.94       0.5   
+(CVXPY) Nov 08 12:32:53 PM: 44       536      17       15       9.2000000000e+01     5.0656250000e+01     44.94       0.5   
+(CVXPY) Nov 08 12:32:53 PM: 50       614      23       16       8.9000000000e+01     5.0656250000e+01     43.08       0.6   
+(CVXPY) Nov 08 12:32:53 PM: 57       680      26       17       8.0000000000e+01     5.0656250000e+01     36.68       0.6   
+(CVXPY) Nov 08 12:32:53 PM: An optimal solution satisfying the relative gap tolerance of 1.00e-02(%) has been located.
+(CVXPY) Nov 08 12:32:53 PM: The relative gap is 0.00e+00(%).
+(CVXPY) Nov 08 12:32:53 PM: An optimal solution satisfying the absolute gap tolerance of 0.00e+00 has been located.
+(CVXPY) Nov 08 12:32:53 PM: The absolute gap is 0.00e+00.
+(CVXPY) Nov 08 12:32:53 PM: 
+(CVXPY) Nov 08 12:32:53 PM: Objective of best integer solution : 8.000000000000e+01      
+(CVXPY) Nov 08 12:32:53 PM: Best objective bound               : 8.000000000000e+01      
+(CVXPY) Nov 08 12:32:53 PM: Initial feasible solution objective: Undefined
+(CVXPY) Nov 08 12:32:53 PM: Construct solution objective       : Not employed
+(CVXPY) Nov 08 12:32:53 PM: User objective cut value           : Not employed
+(CVXPY) Nov 08 12:32:53 PM: Number of cuts generated           : 17
+(CVXPY) Nov 08 12:32:53 PM:   Number of Gomory cuts            : 12
+(CVXPY) Nov 08 12:32:53 PM:   Number of knapsack_cover cuts    : 5
+(CVXPY) Nov 08 12:32:53 PM: Number of branches                 : 87
+(CVXPY) Nov 08 12:32:53 PM: Number of relaxations solved       : 687
+(CVXPY) Nov 08 12:32:53 PM: Number of interior point iterations: 6
+(CVXPY) Nov 08 12:32:53 PM: Number of simplex iterations       : 22132
+(CVXPY) Nov 08 12:32:53 PM: Time spend presolving the root     : 0.00
+(CVXPY) Nov 08 12:32:53 PM: Time spend optimizing the root     : 0.01
+(CVXPY) Nov 08 12:32:53 PM: Mixed integer optimizer terminated. Time: 0.57
+(CVXPY) Nov 08 12:32:53 PM: Optimizer terminated. Time: 0.57    
+(CVXPY) Nov 08 12:32:53 PM: 
+(CVXPY) Nov 08 12:32:53 PM: 
+(CVXPY) Nov 08 12:32:53 PM: Integer solution solution summary
+(CVXPY) Nov 08 12:32:53 PM:   Problem status  : PRIMAL_FEASIBLE
+(CVXPY) Nov 08 12:32:53 PM:   Solution status : INTEGER_OPTIMAL
+(CVXPY) Nov 08 12:32:53 PM:   Primal.  obj: 8.0000000000e+01    nrm: 8e+01    Viol.  con: 3e-15    var: 3e-15    itg: 6e-15  
+(CVXPY) Nov 08 12:32:53 PM: Problem status: optimal
+(CVXPY) Nov 08 12:32:53 PM: Optimal value: 8.000e+01
+(CVXPY) Nov 08 12:32:53 PM: Compilation took 5.968e-02 seconds
+(CVXPY) Nov 08 12:32:53 PM: Solver (including time spent in interface) took 5.820e-01 seconds
+===============================================================================
+                                     CVXPY                                     
+                                     v1.7.3                                    
+===============================================================================
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+ROUNDS=14, objective (min active S-boxes over first N rounds) = 80.0
+x (first 32): [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+d (first 8):  [0, 0, 1, 0, 1, 1, 1, 0]
+N=14, min(k_N) = 80
