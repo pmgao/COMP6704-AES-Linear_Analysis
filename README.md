@@ -24,13 +24,13 @@ run the MILP experiments, and how to regenerate all published plots.
 ├── solver_time_compare.py        # Static comparison of solver run times per round count
 ├── cbc_data/
 │   ├── cbc_*.txt            # Saved CBC solver logs for N ∈ {2,4,6,8,10,12,14}
-│   └── cbc_plot.py          # Plot CBC convergence (full and zoomed views)
+│   └── cbc_plot.py          # Plot CBC convergence step plots (full and zoomed views)
 ├── highs_data/
 │   ├── highs_*.txt          # Saved HiGHS solver logs for the same N values
 │   └── highs_plot.py        # Generate HiGHS convergence step plots
 └── mosek_data/
     ├── mosek_*.txt          # Saved MOSEK solver logs for the same N values
-    └── mosek_plot.py        # Generate MOSEK convergence plots (+ PDF export)
+    └── mosek_plot.py        # Generate MOSEK convergence step plots
 ```
 
 Each solver script exposes a shared `build_aes_milp_problem` function
